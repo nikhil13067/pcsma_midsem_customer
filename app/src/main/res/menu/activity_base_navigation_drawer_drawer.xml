@@ -5,11 +5,11 @@
         <item
             android:id="@+id/new_order"
             android:icon="@drawable/ic_menu_camera"
-            android:title="New Order" />
+            android:title="Items Available" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_past_orders"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Past orders" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"

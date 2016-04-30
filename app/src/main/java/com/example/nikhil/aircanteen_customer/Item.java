@@ -7,6 +7,7 @@ import android.media.Image;
  * Created by nikhil on 29/3/16.
  */
 public class Item {
+
     int id;
     String name;
     double price;
@@ -14,7 +15,15 @@ public class Item {
     boolean available;
     String foodType;
     int image;
+    int quantity;
 
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
     public int getImage() {
         return image;
@@ -24,25 +33,28 @@ public class Item {
         this.image = image;
     }
 
-    public Item(int id, String name, double price, int time, boolean available, String foodType, int image) {
-        this.id = id;
+    public Item(long id, String name, double price, int time, boolean available, String foodType, int image) {
+        this.id = (int)id;
         this.name = name;
-
         this.price = price;
         this.time = time;
         this.available = available;
         this.foodType = foodType;
         this.image = image;
+        this.quantity = 0;
     }
 
     @Override
     public String toString() {
         return "Item{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", price=" + price +
                 ", time=" + time +
                 ", available=" + available +
                 ", foodType='" + foodType + '\'' +
+                ", image=" + image +
+                ", quantity=" + quantity +
                 '}';
     }
 
